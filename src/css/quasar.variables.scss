@@ -11,8 +11,14 @@
 // It's highly recommended to change the default colors
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,400;1,500&display=swap');
 
-$primary   : #1976D2;
+$primary-font: 'Ubuntu', sans-serif;
+$secondary-font: 'Ubuntu', sans-serif;
+
+$primary   : #ff8f70;
+$primary-color: rgb(255, 143, 112);
 $secondary : #26A69A;
 $accent    : #9C27B0;
 
@@ -22,3 +28,5 @@ $positive  : #21BA45;
 $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
+
+$white: white;
