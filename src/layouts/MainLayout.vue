@@ -19,7 +19,9 @@
           </div>
             <div class="img"></div>
         </div>
-        <div class="section-2"></div>
+        <div class="section-2">
+          <SectionTwo/>
+        </div>
         <div class="section-3"></div>
         <div class="section-4">Hi</div>
         <div class="section-5">Hi</div>
@@ -34,11 +36,13 @@
 
 <script>
 import Navbar from '../pages/Navbar'
+import SectionTwo from '../pages/SectionTwo'
 export default{
   name: 'MainLayout',
 
   components: {
-    Navbar
+    Navbar,
+    SectionTwo
   },
 
   setup () {
