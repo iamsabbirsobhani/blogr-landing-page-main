@@ -22,11 +22,14 @@
         <div class="section-2">
           <SectionTwo/>
         </div>
-        <div class="section-3"></div>
-        <div class="section-4">Hi</div>
-        <div class="section-5">Hi</div>
-        <div class="section-6">Hi</div>
-        <div class="section-7">Hi</div>
+        <div class="section-3">
+          <div class="img"></div>
+          <SectionThree/>
+        </div>
+        <div class="section-4">Section-4</div>
+        <div class="section-5">Section-5</div>
+        <div class="section-6">Section-6</div>
+        <div class="section-7">Section-7</div>
       </div>
 
       <router-view />
@@ -35,6 +38,7 @@
 </template>
 
 <script>
+import SectionThree from 'src/pages/SectionThree.vue'
 import Navbar from '../pages/Navbar'
 import SectionTwo from '../pages/SectionTwo'
 export default{
@@ -42,13 +46,12 @@ export default{
 
   components: {
     Navbar,
-    SectionTwo
+    SectionTwo,
+    SectionThree
   },
 
   setup () {
 
-    return {
-      }
     }
   }
 
@@ -64,6 +67,37 @@ export default{
     width:100%;
     position: relative;
     background: linear-gradient(90deg, rgba(255, 143, 112, 0.897) 0%, rgba(255, 61, 84, 0.801) 100%);
+    margin-bottom: 100px;
+  }
+  .section-2{
+        margin-bottom: 100px;
+  }
+    .section-3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    border-radius: 0px 100px 0px 120px;
+    height: 350px;
+    width:100%;
+    position: relative;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(44,45,63,1) 0%, rgba(63,65,100,1) 100%);
+    margin-bottom: 100px;
+    .img{
+    background-image: url("../assets/bg-pattern-circles.svg");
+    background-size: 850px 850px ;
+    // background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    // background-position: center center;
+    background-color: rgba(0, 0, 0, 0);
+    inset: 0px;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // z-index: 0;
+  }
   }
 
   .img{
