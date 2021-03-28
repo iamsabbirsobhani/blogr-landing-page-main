@@ -1,7 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-page-container>
-
       <div class="fit column no-wrap justify-start items-center content-start">
         <div class="section-1">
           <Navbar class="navbar"/>
@@ -29,9 +28,10 @@
         <div class="section-4">
           <SectionFour/>
         </div>
-        <div class="section-5">Section-5</div>
-        <div class="section-6">Section-6</div>
-        <div class="section-7">Section-7</div>
+        <div class="section-5">
+          <Footer/>
+
+        </div>
       </div>
 
       <router-view />
@@ -41,6 +41,7 @@
 
 <script>
 import SectionThree from 'src/pages/SectionThree.vue'
+import Footer from 'src/pages/Footer.vue'
 import SectionFour from 'src/pages/SectionFour.vue'
 import Navbar from '../pages/Navbar'
 import SectionTwo from '../pages/SectionTwo'
@@ -51,7 +52,8 @@ export default{
     Navbar,
     SectionTwo,
     SectionThree,
-    SectionFour
+    SectionFour,
+    Footer
   },
 
   setup () {
@@ -71,10 +73,10 @@ export default{
     width:100%;
     position: relative;
     background: linear-gradient(90deg, rgba(255, 143, 112, 0.897) 0%, rgba(255, 61, 84, 0.801) 100%);
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
   .section-2{
-        margin-bottom: 100px;
+        margin-bottom: 150px;
   }
     .section-3{
       display: flex;
@@ -86,7 +88,7 @@ export default{
     position: relative;
     z-index: -1;
     background: linear-gradient(90deg, rgba(44,45,63,1) 0%, rgba(63,65,100,1) 100%);
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     .img{
     background-image: url("../assets/bg-pattern-circles.svg");
     background-size: 850px 850px ;
@@ -103,7 +105,20 @@ export default{
     // z-index: 0;
   }
   }
-
+  .section-4{
+    margin-bottom: 150px;
+  }
+  .section-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 100px 0px 0px;
+    height: 300px;
+    width:100%;
+    position: relative;
+    z-index: -1;
+    background: black;
+  }
   .img{
     background-image: url("../assets/bg-pattern-intro.svg");
     background-size: cover;

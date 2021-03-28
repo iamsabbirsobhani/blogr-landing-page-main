@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div class="main fit row no-wrap justify-start items-start content-start">
         <img src="../assets/illustration-phones.svg" alt="">
         <div class="right">
             <h1>State of the Art Infrastructure</h1>
