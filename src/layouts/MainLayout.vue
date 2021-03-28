@@ -26,7 +26,9 @@
           <div class="img"></div>
           <SectionThree/>
         </div>
-        <div class="section-4">Section-4</div>
+        <div class="section-4">
+          <SectionFour/>
+        </div>
         <div class="section-5">Section-5</div>
         <div class="section-6">Section-6</div>
         <div class="section-7">Section-7</div>
@@ -39,6 +41,7 @@
 
 <script>
 import SectionThree from 'src/pages/SectionThree.vue'
+import SectionFour from 'src/pages/SectionFour.vue'
 import Navbar from '../pages/Navbar'
 import SectionTwo from '../pages/SectionTwo'
 export default{
@@ -47,7 +50,8 @@ export default{
   components: {
     Navbar,
     SectionTwo,
-    SectionThree
+    SectionThree,
+    SectionFour
   },
 
   setup () {
